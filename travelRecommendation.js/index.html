@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Blog</title>
+    <!-- Include Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header menu section -->
+    <nav class="nav-bar">
+      <div class="container top-menu">
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Search section -->
+    <section class="search-container">
+      <input
+        type="text"
+        id="searchField"
+        placeholder="Search for beaches, temples, countries..."
+      />
+      <button onclick="searchRecommendations()">Search</button>
+      <button onclick="clearSearch()">Reset</button>
+    
+    </section>
+  
+
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome</h1>
+        <hr />
+        <p>Your one-stop get-away information</p>
+      </div>
+      <!-- //displaying search results -->
+          <div id="recommendations">
+            
+          </div>
+      
+    </section>
+
+    <!-- Main section -->
+    <div class="container main">
+      <main class="main-content">
+        <!-- Latest Post -->
+        <h2>Latest Post</h2>
+        <hr />
+        <!-- Articles -->
+        <article>
+          <div class="art-img">
+            <img src="img/bondi.jpg" alt="Bondi Beach" />
+          </div>
+          <div class="art-content">
+            <div class="title">Bondi Beach</div>
+                <i class="fa-solid fa-calendar-days"></i>
+            <p class="p1">
+              The rule is to visit an unfamiliar place once a year. Our only
+              regrets are the chances we failed to take.
+            </p>
+            <button class="btn">
+              Read More <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+        <article>
+          <div class="art-img">
+            <img src="img/opera.jpg" width="100%" alt="" />
+          </div>
+          <div class="art-content">
+            <div class="title">Opera House</div>
+
+            <i class="fa-solid fa-calendar-days"></i>
+
+             <p class="p1">
+              A tranquil retreat in the middle of the city, the Chinese Garden
+              of Friendship is one of Sydney's best attractions.
+            </p>
+            <button class="btn">
+              Read More
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+        <!-- Include more articles here -->
+      </main>
+      <aside class="side-links">
+        <!-- Sidebar links -->
+        <div class="read-by-country">
+          <h3>Read By Country</h3>
+          <ul>
+            <li>Australia</li>
+            <li>Nepal</li>
+            <li>Japan</li>
+          </ul>
+        </div>
+        <div class="read-by-year">
+          <h3>Read By Year</h3>
+          <ul>
+            <li>2019</li>
+            <li>2020</li>
+            <li>2021</li>
+            <li>2022</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Recommendation Section -->
+    <section class="recc">
+      <div class="container">
+      
+        <h3>Popular Destination</h3>
+    <hr/>
+
+    <div class="card-list">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1524274165673-750e79bf7e2e?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="100%" />
+
+            <div class="container">
+                <h4>Narrows at Zion Nation Park x Golden Hour</h4>
+                <h6>Lorem ipsum dolor untur aliquid consectetur provident dolores ipsam deserunt pariatur quam ne</h6>
+            
+             <button class="btn">Learn More..</button>
+
+
+            </div>
+      </div>
+      <div class="card">
+            <img src="https://images.unsplash.com/photo-1669544695426-88d5bac4fc3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" width="100%" />
+
+            <div class="container">
+                <h4>Gowings Restaurant</h4>
+                <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo modi consequuntur aliquid consectetur provident dolores ipsam deserunt pariatur quam ne</h6>
+            
+             <button class="btn">Learn More..</button>
+
+
+            </div>
+       
+
+        </div>
+      
+    </section>
+      
+
+    <!-- Subscription section -->
+    <div class="subscription container">
+      <h3>Subscribe for News</h3>
+      <form action="">
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Email" />
+        <button class="btn">Subscribe</button>
+      </form>
+    </div>
+ <!-- Global message section -->
+    <div class="global-msg">
+      <div class="gbl-content container">
+        <div class="msg">Connect with us</div>
+        <div class="social">
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <i class="fab fa-facebook-messenger"></i>
+          <i class="fab fa-tiktok"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">&copy; All rights reserved 2024 🇳🇵❤️‍🔥</div>
+
+   
+
+    <!-- Include Font Awesome JS for icons (required for Font Awesome 6) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+    <!-- Include your custom JavaScript file -->
+    <script src="index.js"></script>
+  </body>
+</html>
